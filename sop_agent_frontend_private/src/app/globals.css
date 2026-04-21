@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 202 23% 94%;
+    --foreground: 209 60% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 209 60% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 209 60% 10%;
+    --primary: 209 60% 50%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 240 55% 94%;
+    --secondary-foreground: 209 60% 30%;
+    --muted: 240 10% 90%;
+    --muted-foreground: 209 20% 40%;
+    --accent: 240 55% 68%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 209 30% 85%;
+    --input: 209 30% 85%;
+    --ring: 209 60% 50%;
+    --radius: 0.75rem;
+  }
+  .dark {
+    --background: 209 60% 5%;
+    --foreground: 210 40% 98%;
+    --card: 209 60% 8%;
+    --card-foreground: 210 40% 98%;
+    --popover: 209 60% 8%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 209 60% 55%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 240 40% 20%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 209 30% 15%;
+    --muted-foreground: 209 20% 65%;
+    --accent: 240 55% 68%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 209 30% 20%;
+    --input: 209 30% 20%;
+    --ring: 209 60% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body antialiased transition-colors duration-200;
+  }
+  ::-webkit-scrollbar{
+    display: none;
+  }
+}
